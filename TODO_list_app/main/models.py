@@ -8,6 +8,16 @@ class Task(models.Model):
     description = models.TextField(null=True, blank=True)
     complete = models.BooleanField(default=False)
     create = models.DateTimeField(auto_now_add=True)
+    CATEGORIES_CHOICES = [
+        ('WK', 'work'),
+        ('ST', 'study'),
+        ('HB', 'hobby'),
+        ('OT', 'other'),
+    ]
+    category = models.CharField(
+        max_length=2, 
+        choices=CATEGORIES_CHOICES, 
+        default='WK')
 
     def __str__(self):
         return self.title
