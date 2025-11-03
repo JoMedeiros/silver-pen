@@ -1,2 +1,12 @@
+db.sqlite3
+.cache
+*.log
+
+### Virtual Env ###
 .venv/
-*.pyc
+venv/
+env
+
+### Python ###
+__pycache__/
+*.py[cod]
