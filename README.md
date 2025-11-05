@@ -19,6 +19,14 @@ python -m pip install django~=5.2.7
 
 ## Como executar
 
+Caso seja a primeira vez é necessário criar o banco de dados (por padrão um sqlite):
+
+```sh
+python TODO_list_app/manage.py migrate
+```
+
+Aí então iniciar o servidor:
+
 ```sh
 python TODO_list_app/manage.py runsever
 ```
