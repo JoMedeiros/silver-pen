@@ -3,6 +3,10 @@
 
 **/migrations/
 
+__pycache__/
+
+db.sqlite3
+
 ### Virtual Env ###
 .venv/
 venv/
