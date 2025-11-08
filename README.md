@@ -14,7 +14,7 @@ source venv/bin/activate
 Instalar o Django
 
 ```sh
-python -m pip install django~=5.2.7
+python -m pip install -r requirements
 ```
 
 ## Como executar
